@@ -1,6 +1,6 @@
 # [Functional Programming in Scala Specialization]()
 
-By: [by École Polytechnique Fédérale de Lausanne](Functional Programming Principles in Scala)
+By: [by École Polytechnique Fédérale de Lausanne](https://www.coursera.org/specializations/scala)
 
 - Course 1: [Functional Programming Principles in Scala]()
 
