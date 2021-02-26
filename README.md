@@ -57,11 +57,13 @@ By: [by École Polytechnique Fédérale de Lausanne](https://www.coursera.org/sp
   - Week 1 - [Project overview]()
   
   - Week 2 - [Raw data display]()
-  
-  - Week 3 - [Data manipulation]()
-  
-  - Week 4 - [Value-added information visualization]()
 
-  - Week 5 - [Interactive user interface]()
+  - Week 3 - [Interactive visualization]()
+  
+  - Week 4 - [Data manipulation]()
+  
+  - Week 5 - [Value-added information visualization]()
+
+  - Week 6 - [Interactive user interface]()
 
 
