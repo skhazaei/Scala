@@ -41,3 +41,27 @@ By: [by École Polytechnique Fédérale de Lausanne](https://www.coursera.org/sp
   - Week 4 - [Data Structures for Parallel Computing]()
 
 
+- Course 4: [Big Data Analysis with Scala and Spark]()
+
+  - Week 1 - [Spark Basics]()
+  
+  - Week 2 - [Reduction Operations & Distributed Key-Value Pairs]()
+  
+  - Week 3 - [Partitioning and Shuffling]()
+  
+  - Week 4 - [Structured data: SQL, Dataframes, and Datasets]()
+
+
+- Course 5: [Functional Programming in Scala Capstone]()
+
+  - Week 1 - [Project overview]()
+  
+  - Week 2 - [Raw data display]()
+  
+  - Week 3 - [Data manipulation]()
+  
+  - Week 4 - [Value-added information visualization]()
+
+  - Week 5 - [Interactive user interface]()
+
+
