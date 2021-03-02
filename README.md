@@ -2,9 +2,9 @@
 
 By: [by École Polytechnique Fédérale de Lausanne](https://www.coursera.org/specializations/scala)
 
-- Course 1: [Functional Programming Principles in Scala]()
+- Course 1: [Functional Programming Principles in Scala](https://github.com/skhazaei/Scala/tree/master/Functional%20Programming%20in%20Scala%20Specialization)
 
-  - Week 1 - [Functions & Evaluation]()
+  - Week 1 - [Functions & Evaluation](https://github.com/skhazaei/Scala/tree/master/Functional%20Programming%20in%20Scala%20Specialization/01.%20Functional%20Programming%20Principles%20in%20Scala/Week1%20-%20Functions%20%26%20Evaluation)
   
   - Week 2 - [Higher Order Functions]()
   
