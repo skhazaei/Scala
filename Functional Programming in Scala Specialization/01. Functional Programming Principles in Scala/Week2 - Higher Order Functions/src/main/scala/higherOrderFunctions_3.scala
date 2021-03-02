@@ -1,0 +1,3 @@
+object higherOrderFunctions_3 {
+
+}
