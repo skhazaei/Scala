@@ -6,7 +6,7 @@ By: [by École Polytechnique Fédérale de Lausanne](https://www.coursera.org/sp
 
   - Week 1 - [Functions & Evaluation](https://github.com/skhazaei/Scala/tree/master/Functional%20Programming%20in%20Scala%20Specialization/01.%20Functional%20Programming%20Principles%20in%20Scala/Week1%20-%20Functions%20%26%20Evaluation)
   
-  - Week 2 - [Higher Order Functions]()
+  - Week 2 - [Higher Order Functions](https://github.com/skhazaei/Scala/tree/master/Functional%20Programming%20in%20Scala%20Specialization/01.%20Functional%20Programming%20Principles%20in%20Scala/Week2%20-%20Higher%20Order%20Functions)
   
   - Week 3 - [Data and Abstraction]()
   
