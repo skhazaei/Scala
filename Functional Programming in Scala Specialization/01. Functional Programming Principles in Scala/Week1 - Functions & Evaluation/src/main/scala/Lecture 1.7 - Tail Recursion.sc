@@ -98,7 +98,6 @@ def factorial_tail(n: Int): Int = {
     if (n==1) acc
     else loop(n*acc, n-1)
   }
-
   loop(1, n)
 }
 factorial_tail(3)
