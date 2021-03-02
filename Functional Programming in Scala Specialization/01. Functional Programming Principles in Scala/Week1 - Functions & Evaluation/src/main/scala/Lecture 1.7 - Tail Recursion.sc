@@ -12,14 +12,14 @@ def gcd(a: Int, b: Int): Int =
 gcd(21, 14)
 // returns 7
 
-  /** Implement a factorial function */
+/** Implement a factorial function */
 def factorial(n : Int): Int =
   if (n==0) 1 else n* factorial(n-1)
 
 factorial(5)
- // returns 120
+// returns 120
 
- /**  What are the differences between two methods?
+/**  What are the differences between two methods?
  *
  * in gcd:
  * the reduction sequence essentially oscillates.
@@ -33,7 +33,7 @@ factorial(5)
  * it to the final value.
  */
 
- /** Tail Recursion:
+/** Tail Recursion:
  * That difference in the rewriting rules actually
  * translates directly to a difference in the actual
  * execution on a computer. In fact, it turns out that
@@ -61,28 +61,28 @@ factorial(5)
  * So, that recursive call is not a tail recursive call,
  * */
 
-  /** TAIL RECURSION IN SCALA
-  * In Scala, only directly recursive calls to the current
-  * function are optimized. One can require that a function
-  * is tail-recursive using a @tailrec annotation:
-  *  */
+/** TAIL RECURSION IN SCALA
+ * In Scala, only directly recursive calls to the current
+ * function are optimized. One can require that a function
+ * is tail-recursive using a @tailrec annotation:
+ *  */
 
 
-  /**
-   * /// What is the benefit of @tailrec annotation?
-   *
-   * A tail recursive function call allows the compiler
-   * to perform a special optimization which it normally
-   * can not with regular recursion.
-   *
-   * In a tail recursive function, the recursive call
-   * is the very last thing to be executed.
-   * In this case, instead of allocating a stack frame
-   * for each call, the compiler can rework the code
-   * to simply reuse the current stack frame, meaning
-   * a tail-recursive function will only use a single
-   * stack frame as opposed to hundreds or even thousands.
-   * */
+/**
+ * /// What is the benefit of @tailrec annotation?
+ *
+ * A tail recursive function call allows the compiler
+ * to perform a special optimization which it normally
+ * can not with regular recursion.
+ *
+ * In a tail recursive function, the recursive call
+ * is the very last thing to be executed.
+ * In this case, instead of allocating a stack frame
+ * for each call, the compiler can rework the code
+ * to simply reuse the current stack frame, meaning
+ * a tail-recursive function will only use a single
+ * stack frame as opposed to hundreds or even thousands.
+ * */
 
 
 @tailrec
@@ -91,7 +91,7 @@ def gcd_tail(a: Int, b: Int): Int =
 gcd_tail(6,2)
 
 
-  /** implement a recursion version of factorial */
+/** implement a recursion version of factorial */
 def factorial_tail(n: Int): Int = {
   @tailrec
   def loop(acc: Int, n: Int): Int = {
