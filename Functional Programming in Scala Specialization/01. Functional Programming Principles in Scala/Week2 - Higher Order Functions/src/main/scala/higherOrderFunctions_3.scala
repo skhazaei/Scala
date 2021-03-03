@@ -60,23 +60,4 @@ object higherOrderFunctions_3
   output = sum_short_version(x => x * x * x, 1, 3)
   println(s" sum (short version) of cubes= $output")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
