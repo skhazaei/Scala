@@ -130,11 +130,5 @@ object Lists {
     println("sorted numbers = " + randomNums.sorted)
     println("reverse sorted numbers = " + (randomNums.sorted).reverse)
 
-
-
-
   }
-
-
-
 }
