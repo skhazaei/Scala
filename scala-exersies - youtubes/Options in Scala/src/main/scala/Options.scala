@@ -48,10 +48,8 @@ object Options {
       case Some(value) => value
       case None => "Denominator must be nonzero"})
 
-
-
-
   }
+
   // Write a function takes numer and denom
   // and returns the fraction
   def fraction1(numer: Double, denom: Double): Double=
@@ -93,10 +91,4 @@ object Options {
     case None => "Denominator must be nonzero"
   }
    */
-
-
-
-
-
-
 }
