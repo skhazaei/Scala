@@ -8,10 +8,12 @@ object classes {
      * The main method creates a new Point and stores it in value pt.
      *
      */
-
     val pt = new point(1, 2)
     println(pt)
 
+    ///
+    val aClass = new ClassWithValParameter("Gandalf")
+    println(aClass.name)
   }
 
 }
@@ -19,3 +21,5 @@ object classes {
 class point(x: Int, y: Int) {
   override def toString(): String = "(" + x + "," + y + ")"
 }
+
+class ClassWithValParameter(val name: String)
