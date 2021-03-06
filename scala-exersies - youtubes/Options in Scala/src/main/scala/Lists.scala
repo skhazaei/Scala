@@ -11,7 +11,7 @@ object Lists {
      * ---- List.range() to create a range of elements
      * ---- substring
      * ---- zip
-     * ---- sorted() and reverse
+     * ---- sorted and reverse
      * */
 
 
