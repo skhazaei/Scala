@@ -5,12 +5,13 @@ object classes {
     // println(num.x) returns error, why?
     println(num.numer)
     println(num.denom)
+
   }
 }
 
 class Rational(x: Int, y: Int){
   // class Rational has two arguments: x and y
-  // we can not access x and y directly because
+  // we can not access x and y directly
   // but with two methods: numer and denom
   def numer = x
   def denom = y
