@@ -1,5 +1,14 @@
 object Tuples {
   def main(args:Array[String]) = {}
+
+  /** What we learn:
+   * ----- creat a tuple using "()" or "key -> value" syntax
+   * ----- use productArity to get the number of elements
+   * ----- fetch the elements of tuple using under score _
+   * ----- assign tuple elements in a clean way
+   * ----- use productIterator.foreach to iterate over the tuple elements
+   */
+
   /**
    * Tuples:
    *       1- declared by enclosing values in parentheses
@@ -52,9 +61,5 @@ object Tuples {
   // A better way to evoke the getModelAndSize method:
   val (cellBrand, cellYear) = getModelAndSize(cellInformation)
   println(cellBrand, cellYear)
-
-
-
-
 
 }
