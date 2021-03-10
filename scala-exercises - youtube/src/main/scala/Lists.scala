@@ -129,6 +129,7 @@ object Lists {
     println(s"random numbers = $randomNums")
     println("sorted numbers = " + randomNums.sorted)
     println("reverse sorted numbers = " + (randomNums.sorted).reverse)
+    println(randomNums(1))
 
   }
 }
