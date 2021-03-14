@@ -2,6 +2,9 @@ object Maps {
   def main(args:Array[String]) = {}
 
   /** What we learn:
+   * ----- Maps are collections used to associate things with other things
+   * ----- With maps we associate keys to values
+   * ----- create an empty map
    * ----- create a map use Map method Map(key -> value)
    * ----- use getClass to get the type/class of variable
    * ----- fetch the values of map
@@ -25,6 +28,11 @@ object Maps {
    * 2- by default is immutable
    * 3- is a set of keys and values
    */
+
+  // create an empty map, which keys are string and values are integers
+  val aMap: Map[String, Int] = Map()
+  println(aMap)
+
 
   // create a menu of food items along with their prices
   // syntax of maps is similar to the tuple: key -> value
@@ -114,4 +122,10 @@ object Maps {
 
   val uniqueKeys = Map(1->2, 1->3, 1->4)
   println(uniqueKeys) // returns Map(1 -> 4)
+
+  println(uniqueKeys.getClass)
+  val anotherMap = uniqueKeys + (2->1)
+  println(anotherMap)
+
+
 }
