@@ -47,7 +47,6 @@ object Options {
     println(fraction2(1, 0) match{
       case Some(value) => value
       case None => "Denominator must be nonzero"})
-
   }
 
   // Write a function takes numer and denom
