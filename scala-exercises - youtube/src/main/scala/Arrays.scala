@@ -2,9 +2,14 @@ object Arrays {
   def main(args:Array[String]) = {
 
     /** What we learn?
-     *
-     *
-     *
+     * --- create an empty array by initiating a new instance of Array class
+     * --- print array elements using mkString method
+     * --- create an array using Array method
+     * --- use size method to get the size of an array
+     * --- access array elements using their indexes (it starts from 0)
+     * --- alter array elements
+     * --- use foreach to print all array elements
+     * --- use map to apply one task on all elements
      */
 
     /**
@@ -48,6 +53,14 @@ object Arrays {
     // modify the first element with "C"
     newArray(0) = "awesome scala"
     println(newArray.mkString(","))
+
+    // use higher order function foreach to iterate over array elements
+    newArray.foreach(println)
+
+    // use map to multiply all elements by 2
+    val duplicatedArray = newArray.map(_*2)
+    println(duplicatedArray.mkString(","))
+
   }
 
 }
