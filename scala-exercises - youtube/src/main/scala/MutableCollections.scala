@@ -45,12 +45,4 @@ object MutableCollections {
   println(immList.getClass)
   println(immList)
 
-
-
-
-
-
-
-
-
 }
