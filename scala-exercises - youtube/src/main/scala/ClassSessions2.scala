@@ -64,3 +64,10 @@ class Coordinate2(val x: Double, val y: Double){
     distance(origin)
   }
 }
+
+object second{
+  def main(args: Array[String]) = {
+  println("HHH")
+  }
+
+}
