@@ -124,18 +124,5 @@ object Expressions extends App {
   println(otherValue) // returns 42
   println(otherValue.getClass) // returns int
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
