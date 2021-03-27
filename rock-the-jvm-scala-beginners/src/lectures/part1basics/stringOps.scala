@@ -35,7 +35,10 @@ object stringOps extends App {
   - +:
   - reverse
   - take
-  - string interpolator
+  - s interpolator
+  - f interpolator
+  - raw interpolator
+
    */
 
   val aNumberString = "45"
@@ -57,10 +60,23 @@ object stringOps extends App {
   println(anotherGreetings)
 
   // f - interpolator
-  
+  val num = 1.2f
+  val info = f"$name%s eats $num%2.2f burger per minute."
+  println(info)
 
+  val euro = 200
+  val anotherInfo = f"$name%s has $euro%10d" // return "Tom has        200"
+  println(anotherInfo)
 
+  // raw - interpolator
+  println(raw"this is a \n new line") // returns this is a \n new line
 
-
+  val escaped = "this is a \n new line"
+  println(raw"$escaped")
+  // this returns:
+  /*
+  this is a
+   new line
+   */
 
 }
