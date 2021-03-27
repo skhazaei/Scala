@@ -30,8 +30,36 @@ object stringOps extends App {
   // belong to java string class.
 
   // Besides scala has its own utility. The followings are scala utility.
+  /*
+  - toInt
+  - +:
+  - reverse
+  - take
+  - string interpolator
+   */
+
   val aNumberString = "45"
-  val aNumber = aNumberString.toInt 
+  val aNumber = aNumberString.toInt
+
+  println("a" +: aNumberString :+ "z") // returns Vector(a, 4, 5, z)
+  println("a" + aNumberString + "z") // returns a45z
+
+  println(str.reverse) // returns alacs gninrael ma I ,olleH
+  println(str.take(3)) // returns Hel
+
+  // s - interpolator
+  val name = "Tom"
+  val age = 13
+  val greetings = s"Hello $name, I am $age years old"
+  println(greetings)
+
+  val anotherGreetings = s"I am turning ${age + 1}"
+  println(anotherGreetings)
+
+  // f - interpolator
+  
+
+
 
 
 
