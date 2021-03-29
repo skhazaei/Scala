@@ -31,14 +31,6 @@ object OOBasics extends App {
   counter.dec(3).print
   counter.dec.dec.dec.print
 
-
-
-
-
-
-
-
-
 }
 // constructor
 class Person(name: String, val age: Int) {
