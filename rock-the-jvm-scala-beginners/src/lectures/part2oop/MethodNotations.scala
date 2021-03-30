@@ -4,13 +4,32 @@ object MethodNotations extends App {
 
   // we are going to declare a class with name Person inside the object
   // to prevent the conflict with other class named Person within this package
-  class Person(val name: String, favoriteMovie: String) {
+  class Person(val name: String, favoriteMovie: String, val age: Int=0) {
     def likes(movie: String): Boolean = movie == favoriteMovie
     def hangOutWith(person: Person): String = s"${this.name} is hanging out with ${person.name}"
     def +(person: Person): String = s"${this.name} is couple with ${person.name}"
     def unary_! : String = s"$name, what the heck?!"
     def isAlive: Boolean = true
     def apply(): String = s"Hi my name is $name and my favorite movie is $favoriteMovie"
+
+
+    /*
+     1. write an overload infix operator +
+        mary + "the rockstar" => new person "Mary (the rockstar)"
+        rock star is the nickname
+    */
+    def +(nickName: String): Person = new Person(s"$name ($nickName)",favoriteMovie)
+
+    /*
+        2. add an age to the person class with default zero value
+       add unary + operator to increment age and returns a new Person with age + 1
+       +mary => mary with age incremented
+
+     */
+    def unary_+ : Person = new Person(name, favoriteMovie, age + 1)
+
+
+
   }
 
   // infix notation
@@ -59,5 +78,31 @@ object MethodNotations extends App {
   // apply method
   println(mary.apply)
   println(mary()) // equivalent
+
+  //
+  println((mary + "the rockstar").apply())
+  println((mary + "the rockstar")())
+
+  //
+  println((mary.unary_+).age)
+  println((+mary).age)
+
+  /*
+    1. write an overload infix operator +
+       mary + "the rockstar" => new person "Mary (the rockstar)"
+       the rockstar is going to be a nickname
+
+    2. add age to the person class with default zero value
+       add unary + operator to increment age and returns a new Person with age + 1
+       +mary => mary with age incremented
+
+    3. add learns method to the Person class => "Mary learns Scala"
+       add learnsScala. calls learns method with "Scala" as parameter
+       Use it in postfix notation.
+
+    4. overload apply method
+       mary.apply(2) => "mary watched Inception 2 times"
+   */
+
 
 }
