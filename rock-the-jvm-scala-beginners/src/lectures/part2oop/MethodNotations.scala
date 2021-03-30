@@ -24,10 +24,22 @@ object MethodNotations extends App {
         2. add an age to the person class with default zero value
        add unary + operator to increment age and returns a new Person with age + 1
        +mary => mary with age incremented
-
      */
     def unary_+ : Person = new Person(name, favoriteMovie, age + 1)
 
+    /*
+        3. add learns method to the Person class => "Mary learns Scala"
+       add learnsScala. calls learns method with "Scala" as parameter
+       Use it in postfix notation.
+     */
+    def learns(thing: String): String = s"$name is learning $thing"
+    def learnsScala = this learns "Scala"
+
+    /*
+      4. overload apply method
+         mary.apply(2) => "mary watched Inception 2 times"
+     */
+    def apply(n: Int): String = s"$name watched $favoriteMovie $n times"
 
 
   }
@@ -87,22 +99,17 @@ object MethodNotations extends App {
   println((mary.unary_+).age)
   println((+mary).age)
 
-  /*
-    1. write an overload infix operator +
-       mary + "the rockstar" => new person "Mary (the rockstar)"
-       the rockstar is going to be a nickname
+  //
+  println(mary.learns("Scala"))
+  println(mary learns "Scala")
 
-    2. add age to the person class with default zero value
-       add unary + operator to increment age and returns a new Person with age + 1
-       +mary => mary with age incremented
+  //
+  println(mary.learnsScala)
+  println(mary learnsScala)
 
-    3. add learns method to the Person class => "Mary learns Scala"
-       add learnsScala. calls learns method with "Scala" as parameter
-       Use it in postfix notation.
-
-    4. overload apply method
-       mary.apply(2) => "mary watched Inception 2 times"
-   */
+  //
+  println(mary.apply(2))
+  println(mary(2))
 
 
 }
