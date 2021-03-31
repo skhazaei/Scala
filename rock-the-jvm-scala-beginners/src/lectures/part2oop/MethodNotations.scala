@@ -111,5 +111,4 @@ object MethodNotations extends App {
   println(mary.apply(2))
   println(mary(2))
 
-
 }
