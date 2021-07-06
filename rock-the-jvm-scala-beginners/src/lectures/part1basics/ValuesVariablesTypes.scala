@@ -2,7 +2,7 @@ package lectures.part1basics
 
 object ValuesVariablesTypes extends App {
 
-  // vals are immutable, so x = 12 gives error
+  // val is immutable, so x = 12 gives error
   val x: Int = 42
   println(x)
 

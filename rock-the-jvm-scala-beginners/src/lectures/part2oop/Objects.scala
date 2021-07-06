@@ -47,8 +47,6 @@ object Objects extends App {
   class Person (val name: String) {
     // instance-level functionality
   }
-
-
   println(Person.N_eyes)
   println(Person.canFly)
 

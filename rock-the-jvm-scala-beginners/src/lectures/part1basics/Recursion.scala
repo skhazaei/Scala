@@ -60,7 +60,14 @@ object Recursion extends App {
    *
    * anotherFactorial is a tail recursive function
    * the key is "use the recursive call as last expression"
+   *
+   * This allow scala to preserve the same stack frame and
+   * not to use an additional stack frame for each recursive calls.
+   * In previous implementation, scala needed a new stack fame for
+   * each call.
    * therefore when we need loops, use tail recursion
+   *
+   *
    */
 
   def repeatedFunction(n: Int, aString: String): String =

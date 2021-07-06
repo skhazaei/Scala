@@ -1,7 +1,6 @@
 package lectures.part2oop
 
-object MethodNotations extends App {
-
+object MethodNotations extends App{
   // we are going to declare a class with name Person inside the object
   // to prevent the conflict with other class named Person within this package
   class Person(val name: String, favoriteMovie: String, val age: Int=0) {

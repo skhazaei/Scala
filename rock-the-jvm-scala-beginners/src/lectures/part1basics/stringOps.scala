@@ -78,5 +78,4 @@ object stringOps extends App {
   this is a
    new line
    */
-
 }

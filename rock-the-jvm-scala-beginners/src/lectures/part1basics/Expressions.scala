@@ -25,9 +25,11 @@ object Expressions extends App {
   // but expression has value or type
 
   // if expression
+
   val aCondition = true
   val conditionValue = if (aCondition) 10 else 3 // if in scala is expression because it returns a value
   println(conditionValue)
+
 
   // Loops are discouraged to use in scala
   // Loops do not really return something meaningful and it just returns side effects

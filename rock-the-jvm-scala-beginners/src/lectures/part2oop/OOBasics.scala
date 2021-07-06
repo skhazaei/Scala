@@ -1,6 +1,9 @@
 package lectures.part2oop
 
-object OOBasics extends App {
+import java.util.concurrent.CountDownLatch
+
+object OOBasics extends App{
+
 
   val person = new Person("Tom", 26)
   // as soon the instance of class Person is instantiated,
@@ -112,8 +115,6 @@ class Counter(val count: Int = 0) {
   def print = println(count)
 
 }
-
-
 
 
 
