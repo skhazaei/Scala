@@ -122,5 +122,5 @@ object Exceptions extends App{
   //println(PocketCalculator.divide(10, 0))
   // This ^^ returns:
   //"Exception in thread "main" lectures.part2oop.Exceptions$MathCalculationException: Division by Zero"
-  
+
 }
