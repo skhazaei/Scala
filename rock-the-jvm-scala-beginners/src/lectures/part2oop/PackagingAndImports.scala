@@ -33,7 +33,7 @@ object PackagingAndImports extends App {
   // 2. use alias name
 
   val date = new Date
-  val date = new sqlDate(2021, 07, 07)
+ // val date = new sqlDate(2021, 07, 07)
 
   /**
    * default imports:
