@@ -173,32 +173,16 @@ object TuplesAndMaps extends App{
 
   println(mostFriends(testNet)) // Bob
 
-  def peopleWithNoFriends(network: Map[String, Set[String]]): Int = {
+  def peopleWithNoFriends(network: Map[String, Set[String]]): Int =
     network.count(_._2.isEmpty)
     //network.count(pair => pair._2.isEmpty)
     //network.filter(k => k._2.isEmpty).size
     //network.view.filterKeys(k => network(k).isEmpty).toMap.size
-  }
+
   println(peopleWithNoFriends(testNet)) // 0
 
   val anotherNet: Map[String, Set[String]] = Map(("Bob", Set("Jim", "Mary")), ("Sam", Set()), ("Mary", Set()))
   println(anotherNet) // Map(Bob -> Set(Jim, Mary), Sam -> Set(), Mary -> Set())
   println(peopleWithNoFriends(anotherNet)) // 2
-
-  def socialConnection(network: Map[String, Set[String]], a: String, b: String): Boolean = {
-
-    
-  }
-
-
-
-
-
-
-
-
-
-
-
-
+  
 }
