@@ -184,5 +184,5 @@ object TuplesAndMaps extends App{
   val anotherNet: Map[String, Set[String]] = Map(("Bob", Set("Jim", "Mary")), ("Sam", Set()), ("Mary", Set()))
   println(anotherNet) // Map(Bob -> Set(Jim, Mary), Sam -> Set(), Mary -> Set())
   println(peopleWithNoFriends(anotherNet)) // 2
-  
+
 }
